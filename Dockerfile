@@ -7,7 +7,7 @@ ADD . /go/src/github.com/rkojedzinszky/go-dhcplogger
 RUN cd /go/src/github.com/rkojedzinszky/go-dhcplogger && go build . && \
     strip -s go-dhcplogger
 
-FROM alpine:3.20
+FROM alpine:3.21
 
 LABEL org.opencontainers.image.authors "Richard Kojedzinszky <richard@kojedz.in>"
 LABEL org.opencontainers.image.source https://github.com/rkojedzinszky/go-dhcplogger
